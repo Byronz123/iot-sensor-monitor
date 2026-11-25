@@ -30,7 +30,7 @@ from .config import (
 )
 from .exceptions import DataFileError, InvalidFormatError, InvalidInputError
 from .io_handler import load_readings, write_csv_file, write_json_file
-from .logger import setup_logging
+from .logger import close_logging, setup_logging
 from .processing import filter_readings, run_pipeline, validate_thresholds
 from .report import format_rejected, format_summary, format_table
 
@@ -449,3 +449,4 @@ def main(argv: list[str] | None = None) -> int:
         return EXIT_UNEXPECTED
     finally:
         logger.info("Perintah '%s' selesai", args.command)
+        close_logging()  # lepas file log agar bisa dihapus/dipindah (Windows)

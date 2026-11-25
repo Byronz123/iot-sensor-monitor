@@ -58,3 +58,16 @@ def setup_logging(log_path: str | Path, *, verbose: bool = False) -> Path | None
             "File log tidak dapat dibuat (%s); log hanya tampil di terminal", failure
         )
     return file_path
+
+
+def close_logging() -> None:
+    """Tutup dan lepas semua handler logging milik root logger.
+
+    Dipanggil di akhir ``cli.main``. Di Windows, file yang masih dibuka oleh
+    ``FileHandler`` tidak dapat dihapus atau dipindah (``PermissionError``
+    WinError 32), sehingga handler harus ditutup setelah program selesai.
+    """
+    root = logging.getLogger()
+    for handler in root.handlers[:]:
+        root.removeHandler(handler)
+        handler.close()

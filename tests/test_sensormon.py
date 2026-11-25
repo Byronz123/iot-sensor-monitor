@@ -206,6 +206,15 @@ class TestCommandLine(unittest.TestCase):
                          "summary.json", "sensormon.log"):
                 self.assertTrue((Path(folder) / name).is_file(), name)
 
+    def test_log_file_is_released(self):
+        # Regression test WinError 32: setelah main() selesai, file log tidak
+        # boleh lagi dipegang FileHandler (di Windows file terbuka tak bisa dihapus).
+        import logging
+        with tempfile.TemporaryDirectory() as folder:
+            self.run_cli("report", "-i", str(DATA_DIR / "edge_empty.csv"), "-o", folder)
+            self.assertEqual(logging.getLogger().handlers, [])
+            (Path(folder) / "sensormon.log").unlink()
+
     def test_error_exit_codes(self):
         with tempfile.TemporaryDirectory() as folder:
             code, _, err = self.run_cli("report", "-i", "tidak_ada.csv", "-o", folder)
