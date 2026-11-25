@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-20 15:38:23",
+    "generated_at": "2026-11-25 20:24:35",
     "thresholds": {
         "warning_temp": 27.0,
         "critical_temp": 32.0,

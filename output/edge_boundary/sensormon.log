@@ -10,3 +10,7 @@
 2026-11-20 15:38:23 [INFO] sensormon.io_handler: Memuat 8 record dari data/edge_boundary.csv
 2026-11-20 15:38:23 [INFO] sensormon.processing: Pipeline selesai: 8 bersih, 0 ditolak, 0 duplikat, 5 peringatan
 2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'search' selesai
+2026-11-25 20:50:34 [INFO] sensormon.cli: Mulai perintah 'search' dengan input 'data/edge_boundary.csv'
+2026-11-25 20:50:34 [INFO] sensormon.io_handler: Memuat 8 record dari data\edge_boundary.csv
+2026-11-25 20:50:34 [INFO] sensormon.processing: Pipeline selesai: 8 bersih, 0 ditolak, 0 duplikat, 5 peringatan
+2026-11-25 20:50:34 [INFO] sensormon.cli: Perintah 'search' selesai
