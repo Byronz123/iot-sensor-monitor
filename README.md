@@ -263,4 +263,4 @@ docstring Google-style di setiap function, panjang baris maks. 99 karakter
   (18–27 °C); spesifikasi rentang ukur sensor DHT22 (−40…80 °C, 0…100 %RH).
 * Bantuan AI: Claude (Anthropic) dipakai untuk membantu menyusun kode,
   data contoh, pengujian, dan dokumentasi. Seluruh kode telah dijalankan dan
-  diuji ulang; isi wajib dipahami dan dapat dijelaskan oleh mahasiswa.
+  diuji ulang.
