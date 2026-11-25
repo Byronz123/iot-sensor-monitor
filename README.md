@@ -5,7 +5,7 @@ membersihkan, menganalisis, dan merekap data sensor IoT suhu & kelembapan
 (DHT22 + ESP32) di ruang server dan laboratorium.
 
 > UTS Pemrograman Dasar (TK091) — S1 Teknik Komputer, Universitas Amikom Yogyakarta
-> Nama: Muhammad Adiyaat Alfathi · NIM: 25.83.1198 · Repository: 
+> Nama: Muhammad Adiyaat Alfathi · NIM: 25.83.1198 · Repository: https://github.com/Byronz123/iot-sensor-monitor
 
 ---
 
@@ -263,4 +263,4 @@ docstring Google-style di setiap function, panjang baris maks. 99 karakter
   (18–27 °C); spesifikasi rentang ukur sensor DHT22 (−40…80 °C, 0…100 %RH).
 * Bantuan AI: Claude (Anthropic) dipakai untuk membantu menyusun kode,
   data contoh, pengujian, dan dokumentasi. Seluruh kode telah dijalankan dan
-  diuji ulang; isi wajib dipahami dan dapat dijelaskan oleh mahasiswa.
+  diuji ulang.
