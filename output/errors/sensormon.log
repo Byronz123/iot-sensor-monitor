@@ -1,0 +1,24 @@
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'report' dengan input 'data/tidak_ada.csv'
+2026-11-20 15:38:23 [ERROR] sensormon.cli: Gagal memproses file: file tidak ditemukan: 'data/tidak_ada.csv'
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'report' selesai
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'report' dengan input 'data/edge_missing_column.csv'
+2026-11-20 15:38:23 [ERROR] sensormon.cli: Gagal memproses file: kolom wajib tidak ditemukan di 'data/edge_missing_column.csv': humidity
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'report' selesai
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'report' dengan input 'data/edge_broken.json'
+2026-11-20 15:38:23 [ERROR] sensormon.cli: Gagal memproses file: JSON tidak valid di 'data/edge_broken.json' baris 4 kolom 65: Expecting ',' delimiter
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'report' selesai
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'report' dengan input 'data/catatan.txt'
+2026-11-20 15:38:23 [ERROR] sensormon.cli: Gagal memproses file: ekstensi '.txt' tidak didukung; gunakan .csv, .json
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'report' selesai
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'report' dengan input 'data/sensor_readings.csv'
+2026-11-20 15:38:23 [ERROR] sensormon.cli: Input tidak valid: ambang WASPADA (35.0) harus lebih kecil dari ambang KRITIS (30.0)
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'report' selesai
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'search' dengan input 'data/sensor_readings.csv'
+2026-11-20 15:38:23 [ERROR] sensormon.cli: Input tidak valid: tanggal '2026-13-01' tidak valid; gunakan YYYY-MM-DD atau 'YYYY-MM-DD HH:MM:SS'
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'search' selesai
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'search' dengan input 'data/sensor_readings.csv'
+2026-11-20 15:38:23 [ERROR] sensormon.cli: Input tidak valid: tanggal --start tidak boleh setelah --end
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'search' selesai
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'search' dengan input 'data/sensor_readings.csv'
+2026-11-20 15:38:23 [ERROR] sensormon.cli: Input tidak valid: file --export harus berakhiran .csv atau .json
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'search' selesai

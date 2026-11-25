@@ -1,0 +1,213 @@
+{
+    "generated_at": "2026-11-20 15:38:23",
+    "thresholds": {
+        "warning_temp": 27.0,
+        "critical_temp": 32.0,
+        "safe_humidity": [
+            20.0,
+            80.0
+        ]
+    },
+    "data_quality": {
+        "raw_records": 27,
+        "valid_records": 25,
+        "rejected_records": 2,
+        "duplicates_removed": 1,
+        "clean_records": 24
+    },
+    "period": {
+        "start": "2026-11-19 00:00:00",
+        "end": "2026-11-19 21:00:00"
+    },
+    "overall": {
+        "readings": 24,
+        "temperature": {
+            "count": 24,
+            "min": 23.0,
+            "max": 30.4,
+            "avg": 25.21
+        },
+        "humidity": {
+            "count": 24,
+            "min": 42.1,
+            "max": 70.7,
+            "avg": 55.94
+        },
+        "status_count": {
+            "NORMAL": 23,
+            "WASPADA": 1,
+            "KRITIS": 0
+        },
+        "locations": [
+            "Lab Embedded System",
+            "Lab Jaringan Komputer",
+            "Ruang Server Utama"
+        ],
+        "sensors": [
+            "S01",
+            "S02",
+            "S03"
+        ]
+    },
+    "by_sensor": {
+        "S01": {
+            "readings": 8,
+            "temperature": {
+                "count": 8,
+                "min": 23.0,
+                "max": 30.4,
+                "avg": 24.71
+            },
+            "humidity": {
+                "count": 8,
+                "min": 42.1,
+                "max": 46.3,
+                "avg": 43.99
+            },
+            "status_count": {
+                "NORMAL": 7,
+                "WASPADA": 1,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Ruang Server Utama"
+            ],
+            "sensors": [
+                "S01"
+            ]
+        },
+        "S02": {
+            "readings": 8,
+            "temperature": {
+                "count": 8,
+                "min": 24.5,
+                "max": 25.7,
+                "avg": 25.06
+            },
+            "humidity": {
+                "count": 8,
+                "min": 52.8,
+                "max": 57.7,
+                "avg": 55.54
+            },
+            "status_count": {
+                "NORMAL": 8,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Lab Jaringan Komputer"
+            ],
+            "sensors": [
+                "S02"
+            ]
+        },
+        "S03": {
+            "readings": 8,
+            "temperature": {
+                "count": 8,
+                "min": 25.2,
+                "max": 26.4,
+                "avg": 25.85
+            },
+            "humidity": {
+                "count": 8,
+                "min": 65.0,
+                "max": 70.7,
+                "avg": 68.29
+            },
+            "status_count": {
+                "NORMAL": 8,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Lab Embedded System"
+            ],
+            "sensors": [
+                "S03"
+            ]
+        }
+    },
+    "by_location": {
+        "Lab Embedded System": {
+            "readings": 8,
+            "temperature": {
+                "count": 8,
+                "min": 25.2,
+                "max": 26.4,
+                "avg": 25.85
+            },
+            "humidity": {
+                "count": 8,
+                "min": 65.0,
+                "max": 70.7,
+                "avg": 68.29
+            },
+            "status_count": {
+                "NORMAL": 8,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Lab Embedded System"
+            ],
+            "sensors": [
+                "S03"
+            ]
+        },
+        "Lab Jaringan Komputer": {
+            "readings": 8,
+            "temperature": {
+                "count": 8,
+                "min": 24.5,
+                "max": 25.7,
+                "avg": 25.06
+            },
+            "humidity": {
+                "count": 8,
+                "min": 52.8,
+                "max": 57.7,
+                "avg": 55.54
+            },
+            "status_count": {
+                "NORMAL": 8,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Lab Jaringan Komputer"
+            ],
+            "sensors": [
+                "S02"
+            ]
+        },
+        "Ruang Server Utama": {
+            "readings": 8,
+            "temperature": {
+                "count": 8,
+                "min": 23.0,
+                "max": 30.4,
+                "avg": 24.71
+            },
+            "humidity": {
+                "count": 8,
+                "min": 42.1,
+                "max": 46.3,
+                "avg": 43.99
+            },
+            "status_count": {
+                "NORMAL": 7,
+                "WASPADA": 1,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Ruang Server Utama"
+            ],
+            "sensors": [
+                "S01"
+            ]
+        }
+    },
+    "first_critical_event": null
+}

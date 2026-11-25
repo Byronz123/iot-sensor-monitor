@@ -1,0 +1,102 @@
+$ python main.py menu   (input: 9, abc, 2, s05, 2, s02, 3, panas, 4, 0)
+Data dimuat: 96 record bersih dari data/sensor_readings.csv
+
+=== MENU SensorMon ===
+1. Tampilkan ringkasan
+2. Cari data per sensor
+3. Filter berdasarkan status
+4. Tampilkan 10 peringatan teratas
+5. Simpan laporan ke folder output
+0. Keluar
+Pilih menu: [!] Pilihan '9' tidak tersedia. Masukkan angka 0-5.
+
+=== MENU SensorMon ===
+1. Tampilkan ringkasan
+2. Cari data per sensor
+3. Filter berdasarkan status
+4. Tampilkan 10 peringatan teratas
+5. Simpan laporan ke folder output
+0. Keluar
+Pilih menu: [!] Pilihan 'abc' tidak tersedia. Masukkan angka 0-5.
+
+=== MENU SensorMon ===
+1. Tampilkan ringkasan
+2. Cari data per sensor
+3. Filter berdasarkan status
+4. Tampilkan 10 peringatan teratas
+5. Simpan laporan ke folder output
+0. Keluar
+Pilih menu: ID sensor ['S01', 'S02', 'S03', 'S04']: [!] Sensor 'S05' tidak dikenal. Pilih salah satu dari ['S01', 'S02', 'S03', 'S04'].
+
+=== MENU SensorMon ===
+1. Tampilkan ringkasan
+2. Cari data per sensor
+3. Filter berdasarkan status
+4. Tampilkan 10 peringatan teratas
+5. Simpan laporan ke folder output
+0. Keluar
+Pilih menu: ID sensor ['S01', 'S02', 'S03', 'S04']: No | Waktu               | Sensor | Lokasi                | Suhu(°C) | RH(%) | Status
+---+---------------------+--------+-----------------------+----------+-------+--------
+1  | 2026-11-18 00:00:00 | S02    | Lab Jaringan Komputer | 23.8     | 53.4  | NORMAL
+2  | 2026-11-18 01:00:00 | S02    | Lab Jaringan Komputer | 23.4     | 61.2  | NORMAL
+3  | 2026-11-18 02:00:00 | S02    | Lab Jaringan Komputer | 23.6     | 54.6  | NORMAL
+4  | 2026-11-18 03:00:00 | S02    | Lab Jaringan Komputer | 24.1     | 57.8  | NORMAL
+5  | 2026-11-18 04:00:00 | S02    | Lab Jaringan Komputer | 24.1     | 55.4  | NORMAL
+6  | 2026-11-18 05:00:00 | S02    | Lab Jaringan Komputer | 24.3     | 59.1  | NORMAL
+7  | 2026-11-18 06:00:00 | S02    | Lab Jaringan Komputer | 24.7     | 57.2  | NORMAL
+8  | 2026-11-18 07:00:00 | S02    | Lab Jaringan Komputer | 24.5     | 59.3  | NORMAL
+9  | 2026-11-18 08:00:00 | S02    | Lab Jaringan Komputer | 25.0     | 54.1  | NORMAL
+10 | 2026-11-18 09:00:00 | S02    | Lab Jaringan Komputer | 24.9     | 54.2  | NORMAL
+11 | 2026-11-18 10:00:00 | S02    | Lab Jaringan Komputer | 25.4     | 56.3  | NORMAL
+12 | 2026-11-18 11:00:00 | S02    | Lab Jaringan Komputer | 25.9     | 53.8  | NORMAL
+13 | 2026-11-18 12:00:00 | S02    | Lab Jaringan Komputer | 26.1     | 54.4  | NORMAL
+14 | 2026-11-18 13:00:00 | S02    | Lab Jaringan Komputer | 25.9     | 55.8  | NORMAL
+15 | 2026-11-18 14:00:00 | S02    | Lab Jaringan Komputer | 27.0     | 51.1  | WASPADA
+16 | 2026-11-18 15:00:00 | S02    | Lab Jaringan Komputer | 26.1     | 50.5  | NORMAL
+17 | 2026-11-18 16:00:00 | S02    | Lab Jaringan Komputer | 26.0     | 53.7  | NORMAL
+18 | 2026-11-18 17:00:00 | S02    | Lab Jaringan Komputer | 25.9     | 50.6  | NORMAL
+19 | 2026-11-18 18:00:00 | S02    | Lab Jaringan Komputer | 25.3     | 56.1  | NORMAL
+20 | 2026-11-18 19:00:00 | S02    | Lab Jaringan Komputer | 25.3     | 53.4  | NORMAL
+21 | 2026-11-18 20:00:00 | S02    | Lab Jaringan Komputer | 25.2     | 56.0  | NORMAL
+22 | 2026-11-18 21:00:00 | S02    | Lab Jaringan Komputer | 24.3     | 51.7  | NORMAL
+23 | 2026-11-18 22:00:00 | S02    | Lab Jaringan Komputer | 24.8     | 53.4  | NORMAL
+24 | 2026-11-18 23:00:00 | S02    | Lab Jaringan Komputer | 24.5     | 53.3  | NORMAL
+
+=== MENU SensorMon ===
+1. Tampilkan ringkasan
+2. Cari data per sensor
+3. Filter berdasarkan status
+4. Tampilkan 10 peringatan teratas
+5. Simpan laporan ke folder output
+0. Keluar
+Pilih menu: Status ['NORMAL', 'WASPADA', 'KRITIS']: [!] Status 'PANAS' tidak valid.
+
+=== MENU SensorMon ===
+1. Tampilkan ringkasan
+2. Cari data per sensor
+3. Filter berdasarkan status
+4. Tampilkan 10 peringatan teratas
+5. Simpan laporan ke folder output
+0. Keluar
+Pilih menu: No | Waktu               | Sensor | Lokasi                | Suhu(°C) | RH(%) | Status
+---+---------------------+--------+-----------------------+----------+-------+--------
+1  | 2026-11-18 15:00:00 | S01    | Ruang Server Utama    | 33.6     | 36.2  | KRITIS
+2  | 2026-11-18 17:00:00 | S01    | Ruang Server Utama    | 32.0     | 43.2  | KRITIS
+3  | 2026-11-18 14:00:00 | S01    | Ruang Server Utama    | 31.2     | 38.5  | WASPADA
+4  | 2026-11-18 16:00:00 | S01    | Ruang Server Utama    | 29.1     | 39.8  | WASPADA
+5  | 2026-11-18 13:00:00 | S01    | Ruang Server Utama    | 28.4     | 41.0  | WASPADA
+6  | 2026-11-18 15:00:00 | S03    | Lab Embedded System   | 27.3     | 68.9  | WASPADA
+7  | 2026-11-18 13:00:00 | S03    | Lab Embedded System   | 27.0     | 68.6  | WASPADA
+8  | 2026-11-18 14:00:00 | S02    | Lab Jaringan Komputer | 27.0     | 51.1  | WASPADA
+9  | 2026-11-18 14:00:00 | S03    | Lab Embedded System   | 27.0     | 69.1  | WASPADA
+10 | 2026-11-18 06:00:00 | S03    | Lab Embedded System   | 25.2     | 82.4  | WASPADA
+
+=== MENU SensorMon ===
+1. Tampilkan ringkasan
+2. Cari data per sensor
+3. Filter berdasarkan status
+4. Tampilkan 10 peringatan teratas
+5. Simpan laporan ke folder output
+0. Keluar
+Pilih menu: Terima kasih.
+[exit code: 0]

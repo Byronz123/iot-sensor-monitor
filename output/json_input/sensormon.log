@@ -1,0 +1,11 @@
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'report' dengan input 'data/sensor_readings.json'
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Memuat 27 record dari data/sensor_readings.json
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 10 dilewati: record bukan objek key-value
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 15 dilewati: kolom kosong/hilang: temperature
+2026-11-20 15:38:23 [INFO] sensormon.processing: Menghapus 1 data duplikat
+2026-11-20 15:38:23 [INFO] sensormon.processing: Pipeline selesai: 24 bersih, 2 ditolak, 1 duplikat, 1 peringatan
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis 24 baris ke output/json_input/clean_readings.csv
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis 1 baris ke output/json_input/alerts.csv
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis 2 baris ke output/json_input/rejected_rows.csv
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis JSON ke output/json_input/summary.json
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'report' selesai

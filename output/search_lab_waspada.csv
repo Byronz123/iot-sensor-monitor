@@ -1,0 +1,7 @@
+timestamp,sensor_id,location,temperature,humidity,status
+2026-11-18 06:00:00,S03,Lab Embedded System,25.2,82.4,WASPADA
+2026-11-18 07:00:00,S03,Lab Embedded System,25.2,84.1,WASPADA
+2026-11-18 13:00:00,S03,Lab Embedded System,27.0,68.6,WASPADA
+2026-11-18 14:00:00,S02,Lab Jaringan Komputer,27.0,51.1,WASPADA
+2026-11-18 14:00:00,S03,Lab Embedded System,27.0,69.1,WASPADA
+2026-11-18 15:00:00,S03,Lab Embedded System,27.3,68.9,WASPADA

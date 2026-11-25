@@ -1,0 +1,6 @@
+{
+    "readings": [
+        {"timestamp": "2026-11-18 00:00:00", "sensor_id": "S01", "location": "Ruang Server Utama", "temperature": 24.1, "humidity": 45.0},
+        {"timestamp": "2026-11-18 01:00:00", "sensor_id": "S01" "location": "Ruang Server Utama", "temperature": 24.0, "humidity": 44.8}
+    ]
+}

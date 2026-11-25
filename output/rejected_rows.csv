@@ -1,0 +1,8 @@
+line,reason,raw
+22,temperature 'ERR' bukan angka,timestamp=2026-11-18 04:30:00; sensor_id=S02; location=Lab Jaringan Komputer; temperature=ERR; humidity=51.2
+39,kolom kosong/hilang: humidity,timestamp=2026-11-18 08:30:00; sensor_id=S03; location=Lab Embedded System; temperature=26.1; humidity=
+53,temperature 125.0 di luar rentang sensor (-40.0 s.d. 80.0),timestamp=2026-11-18 11:30:00; sensor_id=S04; location=Ruang UPS dan Panel; temperature=125.0; humidity=39.0
+58,timestamp '2026-11-18 25:00:00' tidak sesuai format %Y-%m-%d %H:%M:%S,timestamp=2026-11-18 25:00:00; sensor_id=S01; location=Ruang Server Utama; temperature=24.0; humidity=44.0
+84,kolom kosong/hilang: sensor_id,timestamp=2026-11-18 18:30:00; sensor_id=; location=Ruang Server Utama; temperature=25.1; humidity=45.3
+98,humidity -5.0 di luar rentang sensor (0.0 s.d. 100.0),timestamp=2026-11-18 21:30:00; sensor_id=S03; location=Lab Embedded System; temperature=25.4; humidity=-5
+103,temperature 'nan' bukan angka terhingga,timestamp=2026-11-18 22:30:00; sensor_id=S02; location=Lab Jaringan Komputer; temperature=nan; humidity=50.0

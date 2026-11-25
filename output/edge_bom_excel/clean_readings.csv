@@ -1,0 +1,9 @@
+timestamp,sensor_id,location,temperature,humidity,status
+2026-11-18 00:00:00,S01,Ruang Server Utama,22.8,49.7,NORMAL
+2026-11-18 00:00:00,S02,Lab Jaringan Komputer,23.8,53.4,NORMAL
+2026-11-18 00:00:00,S03,Lab Embedded System,24.4,69.1,NORMAL
+2026-11-18 00:00:00,S04,Ruang UPS dan Panel,23.2,41.5,NORMAL
+2026-11-18 01:00:00,S01,Ruang Server Utama,22.1,48.7,NORMAL
+2026-11-18 01:00:00,S02,Lab Jaringan Komputer,23.4,61.2,NORMAL
+2026-11-18 01:00:00,S03,Lab Embedded System,24.3,66.4,NORMAL
+2026-11-18 01:00:00,S04,Ruang UPS dan Panel,22.9,44.3,NORMAL

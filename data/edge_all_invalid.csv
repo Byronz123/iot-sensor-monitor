@@ -1,0 +1,5 @@
+timestamp,sensor_id,location,temperature,humidity
+2026-11-18 01:00:00,S01,Ruang Server Utama,ERR,45.0
+18/11/2026 02:00,S01,Ruang Server Utama,24.0,45.0
+2026-11-18 03:00:00,S01,,24.0,45.0
+2026-11-18 04:00:00,S01,Ruang Server Utama,-60,45.0

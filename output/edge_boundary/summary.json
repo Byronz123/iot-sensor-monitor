@@ -1,0 +1,112 @@
+{
+    "generated_at": "2026-11-20 15:38:23",
+    "thresholds": {
+        "warning_temp": 27.0,
+        "critical_temp": 32.0,
+        "safe_humidity": [
+            20.0,
+            80.0
+        ]
+    },
+    "data_quality": {
+        "raw_records": 8,
+        "valid_records": 8,
+        "rejected_records": 0,
+        "duplicates_removed": 0,
+        "clean_records": 8
+    },
+    "period": {
+        "start": "2026-11-18 00:00:00",
+        "end": "2026-11-18 07:00:00"
+    },
+    "overall": {
+        "readings": 8,
+        "temperature": {
+            "count": 8,
+            "min": 25.0,
+            "max": 32.0,
+            "avg": 27.23
+        },
+        "humidity": {
+            "count": 8,
+            "min": 19.9,
+            "max": 80.1,
+            "avg": 50.0
+        },
+        "status_count": {
+            "NORMAL": 3,
+            "WASPADA": 4,
+            "KRITIS": 1
+        },
+        "locations": [
+            "Ruang Uji"
+        ],
+        "sensors": [
+            "S09"
+        ]
+    },
+    "by_sensor": {
+        "S09": {
+            "readings": 8,
+            "temperature": {
+                "count": 8,
+                "min": 25.0,
+                "max": 32.0,
+                "avg": 27.23
+            },
+            "humidity": {
+                "count": 8,
+                "min": 19.9,
+                "max": 80.1,
+                "avg": 50.0
+            },
+            "status_count": {
+                "NORMAL": 3,
+                "WASPADA": 4,
+                "KRITIS": 1
+            },
+            "locations": [
+                "Ruang Uji"
+            ],
+            "sensors": [
+                "S09"
+            ]
+        }
+    },
+    "by_location": {
+        "Ruang Uji": {
+            "readings": 8,
+            "temperature": {
+                "count": 8,
+                "min": 25.0,
+                "max": 32.0,
+                "avg": 27.23
+            },
+            "humidity": {
+                "count": 8,
+                "min": 19.9,
+                "max": 80.1,
+                "avg": 50.0
+            },
+            "status_count": {
+                "NORMAL": 3,
+                "WASPADA": 4,
+                "KRITIS": 1
+            },
+            "locations": [
+                "Ruang Uji"
+            ],
+            "sensors": [
+                "S09"
+            ]
+        }
+    },
+    "first_critical_event": {
+        "timestamp": "2026-11-18 03:00:00",
+        "sensor_id": "S09",
+        "location": "Ruang Uji",
+        "temperature": 32.0,
+        "humidity": 50.0,
+        "status": "KRITIS"
+    }
+}

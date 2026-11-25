@@ -1,0 +1,37 @@
+{
+    "generated_at": "2026-11-20 15:38:23",
+    "thresholds": {
+        "warning_temp": 27.0,
+        "critical_temp": 32.0,
+        "safe_humidity": [
+            20.0,
+            80.0
+        ]
+    },
+    "data_quality": {
+        "raw_records": 4,
+        "valid_records": 0,
+        "rejected_records": 4,
+        "duplicates_removed": 0,
+        "clean_records": 0
+    },
+    "period": {
+        "start": null,
+        "end": null
+    },
+    "overall": {
+        "readings": 0,
+        "temperature": null,
+        "humidity": null,
+        "status_count": {
+            "NORMAL": 0,
+            "WASPADA": 0,
+            "KRITIS": 0
+        },
+        "locations": [],
+        "sensors": []
+    },
+    "by_sensor": {},
+    "by_location": {},
+    "first_critical_event": null
+}

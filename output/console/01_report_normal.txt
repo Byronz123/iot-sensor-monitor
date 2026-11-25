@@ -1,0 +1,45 @@
+$ python main.py report -i data/sensor_readings.csv
+================================================================
+LAPORAN MONITORING SUHU & KELEMBAPAN (SensorMon)
+================================================================
+Periode data      : 2026-11-18 00:00:00 s.d. 2026-11-18 23:00:00
+Ambang batas      : WASPADA >= 27.0 °C, KRITIS >= 32.0 °C, RH aman 20-80 %
+
+[Kualitas Data]
+  Record dibaca     : 106
+  Ditolak (invalid) : 7
+  Duplikat dihapus  : 3
+  Record bersih     : 96
+
+[Ringkasan Keseluruhan]
+  Suhu       : min 22.1°C | maks 33.6°C | rata-rata 24.93°C
+  Kelembapan : min 18.6% | maks 84.1% | rata-rata 51.77%
+  Status     : NORMAL=84, WASPADA=10, KRITIS=2
+
+[Rekap per Sensor]
+No | Sensor | Lokasi                | Data | Rata2 Suhu | Maks Suhu | Rata2 RH | Peringatan
+---+--------+-----------------------+------+------------+-----------+----------+-----------
+1  | S01    | Ruang Server Utama    | 24   | 24.79      | 33.6      | 44.36    | 5
+2  | S02    | Lab Jaringan Komputer | 24   | 25.00      | 27.0      | 54.85    | 1
+3  | S03    | Lab Embedded System   | 24   | 25.79      | 27.3      | 68.80    | 5
+4  | S04    | Ruang UPS dan Panel   | 24   | 24.14      | 25.4      | 39.05    | 1
+
+[Kejadian KRITIS Pertama]
+  2026-11-18 15:00:00 - S01 (Ruang Server Utama) suhu 33.6 °C
+================================================================
+Baris yang ditolak:
+  - baris 22: temperature 'ERR' bukan angka
+  - baris 39: kolom kosong/hilang: humidity
+  - baris 53: temperature 125.0 di luar rentang sensor (-40.0 s.d. 80.0)
+  - baris 58: timestamp '2026-11-18 25:00:00' tidak sesuai format %Y-%m-%d %H:%M:%S
+  - baris 84: kolom kosong/hilang: sensor_id
+  - baris 98: humidity -5.0 di luar rentang sensor (0.0 s.d. 100.0)
+  - baris 103: temperature 'nan' bukan angka terhingga
+
+File keluaran:
+  - output/clean_readings.csv
+  - output/alerts.csv
+  - output/rejected_rows.csv
+  - output/summary.json
+[exit code: 0]
+

@@ -1,0 +1,35 @@
+$ python main.py search --sensor S01 --start "2026-11-18 12:00:00" --end "2026-11-18 18:00:00"
+Kriteria : sensor_id=S01, start=2026-11-18 12:00:00, end=2026-11-18 18:00:00
+Ditemukan: 7 data
+No | Waktu               | Sensor | Lokasi             | Suhu(°C) | RH(%) | Status
+---+---------------------+--------+--------------------+----------+-------+--------
+1  | 2026-11-18 12:00:00 | S01    | Ruang Server Utama | 24.3     | 41.1  | NORMAL
+2  | 2026-11-18 13:00:00 | S01    | Ruang Server Utama | 28.4     | 41.0  | WASPADA
+3  | 2026-11-18 14:00:00 | S01    | Ruang Server Utama | 31.2     | 38.5  | WASPADA
+4  | 2026-11-18 15:00:00 | S01    | Ruang Server Utama | 33.6     | 36.2  | KRITIS
+5  | 2026-11-18 16:00:00 | S01    | Ruang Server Utama | 29.1     | 39.8  | WASPADA
+6  | 2026-11-18 17:00:00 | S01    | Ruang Server Utama | 32.0     | 43.2  | KRITIS
+7  | 2026-11-18 18:00:00 | S01    | Ruang Server Utama | 24.3     | 44.4  | NORMAL
+[exit code: 0]
+
+$ python main.py search --location lab --status WASPADA --export output/search_lab_waspada.csv
+Kriteria : location=lab, status=WASPADA
+Ditemukan: 6 data
+No | Waktu               | Sensor | Lokasi                | Suhu(°C) | RH(%) | Status
+---+---------------------+--------+-----------------------+----------+-------+--------
+1  | 2026-11-18 06:00:00 | S03    | Lab Embedded System   | 25.2     | 82.4  | WASPADA
+2  | 2026-11-18 07:00:00 | S03    | Lab Embedded System   | 25.2     | 84.1  | WASPADA
+3  | 2026-11-18 13:00:00 | S03    | Lab Embedded System   | 27.0     | 68.6  | WASPADA
+4  | 2026-11-18 14:00:00 | S02    | Lab Jaringan Komputer | 27.0     | 51.1  | WASPADA
+5  | 2026-11-18 14:00:00 | S03    | Lab Embedded System   | 27.0     | 69.1  | WASPADA
+6  | 2026-11-18 15:00:00 | S03    | Lab Embedded System   | 27.3     | 68.9  | WASPADA
+
+Hasil pencarian disimpan ke output/search_lab_waspada.csv
+[exit code: 0]
+
+$ python main.py search --location lab --status KRITIS
+Kriteria : location=lab, status=KRITIS
+Ditemukan: 0 data
+(tidak ada data yang cocok)
+[exit code: 0]
+

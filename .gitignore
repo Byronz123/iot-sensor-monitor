@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+venv/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# File hasil unduhan, bukan bagian project
+Claude outputs/

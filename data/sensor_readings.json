@@ -1,0 +1,188 @@
+{
+    "device_gateway": "GW-LAB-01",
+    "readings": [
+        {
+            "timestamp": "2026-11-19 00:00:00",
+            "sensor_id": "S01",
+            "location": "Ruang Server Utama",
+            "temperature": 23.0,
+            "humidity": 43.9
+        },
+        {
+            "timestamp": "2026-11-19 00:00:00",
+            "sensor_id": "S02",
+            "location": "Lab Jaringan Komputer",
+            "temperature": 25.7,
+            "humidity": 57.1
+        },
+        {
+            "timestamp": "2026-11-19 00:00:00",
+            "sensor_id": "S03",
+            "location": "Lab Embedded System",
+            "temperature": 25.6,
+            "humidity": 70.7
+        },
+        {
+            "timestamp": "2026-11-19 03:00:00",
+            "sensor_id": "S01",
+            "location": "Ruang Server Utama",
+            "temperature": 24.0,
+            "humidity": 42.4
+        },
+        {
+            "timestamp": "2026-11-19 03:00:00",
+            "sensor_id": "S02",
+            "location": "Lab Jaringan Komputer",
+            "temperature": 25.2,
+            "humidity": 54.3
+        },
+        {
+            "timestamp": "2026-11-19 03:00:00",
+            "sensor_id": "S02",
+            "location": "Lab Jaringan Komputer",
+            "temperature": 25.2,
+            "humidity": 54.3
+        },
+        {
+            "timestamp": "2026-11-19 03:00:00",
+            "sensor_id": "S03",
+            "location": "Lab Embedded System",
+            "temperature": 25.3,
+            "humidity": 67.8
+        },
+        {
+            "timestamp": "2026-11-19 06:00:00",
+            "sensor_id": "S01",
+            "location": "Ruang Server Utama",
+            "temperature": 24.3,
+            "humidity": 44.5
+        },
+        {
+            "timestamp": "2026-11-19 06:00:00",
+            "sensor_id": "S02",
+            "location": "Lab Jaringan Komputer",
+            "temperature": 24.6,
+            "humidity": 57.7
+        },
+        "SENSOR S03 OFFLINE",
+        {
+            "timestamp": "2026-11-19 06:00:00",
+            "sensor_id": "S03",
+            "location": "Lab Embedded System",
+            "temperature": 25.9,
+            "humidity": 65.0
+        },
+        {
+            "timestamp": "2026-11-19 09:00:00",
+            "sensor_id": "S01",
+            "location": "Ruang Server Utama",
+            "temperature": 23.4,
+            "humidity": 43.0
+        },
+        {
+            "timestamp": "2026-11-19 09:00:00",
+            "sensor_id": "S02",
+            "location": "Lab Jaringan Komputer",
+            "temperature": 24.5,
+            "humidity": 55.0
+        },
+        {
+            "timestamp": "2026-11-19 09:00:00",
+            "sensor_id": "S03",
+            "location": "Lab Embedded System",
+            "temperature": 26.2,
+            "humidity": 69.1
+        },
+        {
+            "timestamp": "2026-11-19 12:00:00",
+            "sensor_id": "S02",
+            "location": "Lab Jaringan Komputer",
+            "temperature": null,
+            "humidity": 52.0
+        },
+        {
+            "timestamp": "2026-11-19 12:00:00",
+            "sensor_id": "S01",
+            "location": "Ruang Server Utama",
+            "temperature": 30.4,
+            "humidity": 45.2
+        },
+        {
+            "timestamp": "2026-11-19 12:00:00",
+            "sensor_id": "S02",
+            "location": "Lab Jaringan Komputer",
+            "temperature": 24.9,
+            "humidity": 57.4
+        },
+        {
+            "timestamp": "2026-11-19 12:00:00",
+            "sensor_id": "S03",
+            "location": "Lab Embedded System",
+            "temperature": 26.3,
+            "humidity": 70.3
+        },
+        {
+            "timestamp": "2026-11-19 15:00:00",
+            "sensor_id": "S01",
+            "location": "Ruang Server Utama",
+            "temperature": 24.0,
+            "humidity": 44.5
+        },
+        {
+            "timestamp": "2026-11-19 15:00:00",
+            "sensor_id": "S02",
+            "location": "Lab Jaringan Komputer",
+            "temperature": 25.2,
+            "humidity": 56.9
+        },
+        {
+            "timestamp": "2026-11-19 15:00:00",
+            "sensor_id": "S03",
+            "location": "Lab Embedded System",
+            "temperature": 25.2,
+            "humidity": 70.1
+        },
+        {
+            "timestamp": "2026-11-19 18:00:00",
+            "sensor_id": "S01",
+            "location": "Ruang Server Utama",
+            "temperature": 24.3,
+            "humidity": 46.3
+        },
+        {
+            "timestamp": "2026-11-19 18:00:00",
+            "sensor_id": "S02",
+            "location": "Lab Jaringan Komputer",
+            "temperature": 25.7,
+            "humidity": 53.1
+        },
+        {
+            "timestamp": "2026-11-19 18:00:00",
+            "sensor_id": "S03",
+            "location": "Lab Embedded System",
+            "temperature": 26.4,
+            "humidity": 67.3
+        },
+        {
+            "timestamp": "2026-11-19 21:00:00",
+            "sensor_id": "S01",
+            "location": "Ruang Server Utama",
+            "temperature": 24.3,
+            "humidity": 42.1
+        },
+        {
+            "timestamp": "2026-11-19 21:00:00",
+            "sensor_id": "S02",
+            "location": "Lab Jaringan Komputer",
+            "temperature": 24.7,
+            "humidity": 52.8
+        },
+        {
+            "timestamp": "2026-11-19 21:00:00",
+            "sensor_id": "S03",
+            "location": "Lab Embedded System",
+            "temperature": 25.9,
+            "humidity": 66.0
+        }
+    ]
+}

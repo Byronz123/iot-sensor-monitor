@@ -1,0 +1,5 @@
+line,reason,raw
+2,temperature 'ERR' bukan angka,timestamp=2026-11-18 01:00:00; sensor_id=S01; location=Ruang Server Utama; temperature=ERR; humidity=45.0
+3,timestamp '18/11/2026 02:00' tidak sesuai format %Y-%m-%d %H:%M:%S,timestamp=18/11/2026 02:00; sensor_id=S01; location=Ruang Server Utama; temperature=24.0; humidity=45.0
+4,kolom kosong/hilang: location,timestamp=2026-11-18 03:00:00; sensor_id=S01; location=; temperature=24.0; humidity=45.0
+5,temperature -60.0 di luar rentang sensor (-40.0 s.d. 80.0),timestamp=2026-11-18 04:00:00; sensor_id=S01; location=Ruang Server Utama; temperature=-60; humidity=45.0

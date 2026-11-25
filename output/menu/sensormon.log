@@ -1,0 +1,18 @@
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'menu' dengan input 'data/sensor_readings.csv'
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Memuat 106 record dari data/sensor_readings.csv
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 22 dilewati: temperature 'ERR' bukan angka
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 39 dilewati: kolom kosong/hilang: humidity
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 53 dilewati: temperature 125.0 di luar rentang sensor (-40.0 s.d. 80.0)
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 58 dilewati: timestamp '2026-11-18 25:00:00' tidak sesuai format %Y-%m-%d %H:%M:%S
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 84 dilewati: kolom kosong/hilang: sensor_id
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 98 dilewati: humidity -5.0 di luar rentang sensor (0.0 s.d. 100.0)
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 103 dilewati: temperature 'nan' bukan angka terhingga
+2026-11-20 15:38:23 [INFO] sensormon.processing: Menghapus 3 data duplikat
+2026-11-20 15:38:23 [INFO] sensormon.processing: Pipeline selesai: 96 bersih, 7 ditolak, 3 duplikat, 12 peringatan
+2026-11-20 15:38:23 [WARNING] sensormon.cli: Pilihan menu tidak valid: '9'
+2026-11-20 15:38:23 [WARNING] sensormon.cli: Pilihan menu tidak valid: 'abc'
+2026-11-20 15:38:23 [INFO] sensormon.cli: Menu dipilih: Cari data per sensor
+2026-11-20 15:38:23 [INFO] sensormon.cli: Menu dipilih: Cari data per sensor
+2026-11-20 15:38:23 [INFO] sensormon.cli: Menu dipilih: Filter berdasarkan status
+2026-11-20 15:38:23 [INFO] sensormon.cli: Menu dipilih: Tampilkan 10 peringatan teratas
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'menu' selesai

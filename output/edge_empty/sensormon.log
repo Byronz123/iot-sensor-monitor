@@ -1,0 +1,9 @@
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'report' dengan input 'data/edge_empty.csv'
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Memuat 0 record dari data/edge_empty.csv
+2026-11-20 15:38:23 [WARNING] sensormon.processing: File input tidak berisi record data
+2026-11-20 15:38:23 [INFO] sensormon.processing: Pipeline selesai: 0 bersih, 0 ditolak, 0 duplikat, 0 peringatan
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis 0 baris ke output/edge_empty/clean_readings.csv
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis 0 baris ke output/edge_empty/alerts.csv
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis 0 baris ke output/edge_empty/rejected_rows.csv
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis JSON ke output/edge_empty/summary.json
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'report' selesai

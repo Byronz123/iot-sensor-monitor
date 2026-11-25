@@ -1,0 +1,8 @@
+# SensorMon hanya memakai Python Standard Library (Python >= 3.9).
+# Tidak ada dependency pihak ketiga, sehingga perintah berikut aman dijalankan
+# dan tidak meng-install apa pun:
+#     pip install -r requirements.txt
+#
+# Module standard library yang digunakan:
+#   argparse, csv, json, logging, pathlib, datetime, math, os, sys,
+#   unittest, tempfile, io, contextlib

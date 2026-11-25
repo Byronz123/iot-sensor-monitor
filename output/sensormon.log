@@ -1,0 +1,53 @@
+2026-11-20 15:38:22 [INFO] sensormon.cli: Mulai perintah 'report' dengan input 'data/sensor_readings.csv'
+2026-11-20 15:38:22 [INFO] sensormon.io_handler: Memuat 106 record dari data/sensor_readings.csv
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 22 dilewati: temperature 'ERR' bukan angka
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 39 dilewati: kolom kosong/hilang: humidity
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 53 dilewati: temperature 125.0 di luar rentang sensor (-40.0 s.d. 80.0)
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 58 dilewati: timestamp '2026-11-18 25:00:00' tidak sesuai format %Y-%m-%d %H:%M:%S
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 84 dilewati: kolom kosong/hilang: sensor_id
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 98 dilewati: humidity -5.0 di luar rentang sensor (0.0 s.d. 100.0)
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 103 dilewati: temperature 'nan' bukan angka terhingga
+2026-11-20 15:38:22 [INFO] sensormon.processing: Menghapus 3 data duplikat
+2026-11-20 15:38:22 [INFO] sensormon.processing: Pipeline selesai: 96 bersih, 7 ditolak, 3 duplikat, 12 peringatan
+2026-11-20 15:38:22 [INFO] sensormon.io_handler: Menulis 96 baris ke output/clean_readings.csv
+2026-11-20 15:38:22 [INFO] sensormon.io_handler: Menulis 12 baris ke output/alerts.csv
+2026-11-20 15:38:22 [INFO] sensormon.io_handler: Menulis 7 baris ke output/rejected_rows.csv
+2026-11-20 15:38:22 [INFO] sensormon.io_handler: Menulis JSON ke output/summary.json
+2026-11-20 15:38:22 [INFO] sensormon.cli: Perintah 'report' selesai
+2026-11-20 15:38:22 [INFO] sensormon.cli: Mulai perintah 'search' dengan input 'data/sensor_readings.csv'
+2026-11-20 15:38:22 [INFO] sensormon.io_handler: Memuat 106 record dari data/sensor_readings.csv
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 22 dilewati: temperature 'ERR' bukan angka
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 39 dilewati: kolom kosong/hilang: humidity
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 53 dilewati: temperature 125.0 di luar rentang sensor (-40.0 s.d. 80.0)
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 58 dilewati: timestamp '2026-11-18 25:00:00' tidak sesuai format %Y-%m-%d %H:%M:%S
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 84 dilewati: kolom kosong/hilang: sensor_id
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 98 dilewati: humidity -5.0 di luar rentang sensor (0.0 s.d. 100.0)
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 103 dilewati: temperature 'nan' bukan angka terhingga
+2026-11-20 15:38:22 [INFO] sensormon.processing: Menghapus 3 data duplikat
+2026-11-20 15:38:22 [INFO] sensormon.processing: Pipeline selesai: 96 bersih, 7 ditolak, 3 duplikat, 12 peringatan
+2026-11-20 15:38:22 [INFO] sensormon.cli: Perintah 'search' selesai
+2026-11-20 15:38:22 [INFO] sensormon.cli: Mulai perintah 'search' dengan input 'data/sensor_readings.csv'
+2026-11-20 15:38:22 [INFO] sensormon.io_handler: Memuat 106 record dari data/sensor_readings.csv
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 22 dilewati: temperature 'ERR' bukan angka
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 39 dilewati: kolom kosong/hilang: humidity
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 53 dilewati: temperature 125.0 di luar rentang sensor (-40.0 s.d. 80.0)
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 58 dilewati: timestamp '2026-11-18 25:00:00' tidak sesuai format %Y-%m-%d %H:%M:%S
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 84 dilewati: kolom kosong/hilang: sensor_id
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 98 dilewati: humidity -5.0 di luar rentang sensor (0.0 s.d. 100.0)
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 103 dilewati: temperature 'nan' bukan angka terhingga
+2026-11-20 15:38:22 [INFO] sensormon.processing: Menghapus 3 data duplikat
+2026-11-20 15:38:22 [INFO] sensormon.processing: Pipeline selesai: 96 bersih, 7 ditolak, 3 duplikat, 12 peringatan
+2026-11-20 15:38:22 [INFO] sensormon.io_handler: Menulis 6 baris ke output/search_lab_waspada.csv
+2026-11-20 15:38:22 [INFO] sensormon.cli: Perintah 'search' selesai
+2026-11-20 15:38:22 [INFO] sensormon.cli: Mulai perintah 'search' dengan input 'data/sensor_readings.csv'
+2026-11-20 15:38:22 [INFO] sensormon.io_handler: Memuat 106 record dari data/sensor_readings.csv
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 22 dilewati: temperature 'ERR' bukan angka
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 39 dilewati: kolom kosong/hilang: humidity
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 53 dilewati: temperature 125.0 di luar rentang sensor (-40.0 s.d. 80.0)
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 58 dilewati: timestamp '2026-11-18 25:00:00' tidak sesuai format %Y-%m-%d %H:%M:%S
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 84 dilewati: kolom kosong/hilang: sensor_id
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 98 dilewati: humidity -5.0 di luar rentang sensor (0.0 s.d. 100.0)
+2026-11-20 15:38:22 [WARNING] sensormon.processing: Baris 103 dilewati: temperature 'nan' bukan angka terhingga
+2026-11-20 15:38:22 [INFO] sensormon.processing: Menghapus 3 data duplikat
+2026-11-20 15:38:22 [INFO] sensormon.processing: Pipeline selesai: 96 bersih, 7 ditolak, 3 duplikat, 12 peringatan
+2026-11-20 15:38:22 [INFO] sensormon.cli: Perintah 'search' selesai

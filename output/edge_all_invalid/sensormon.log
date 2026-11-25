@@ -1,0 +1,12 @@
+2026-11-20 15:38:23 [INFO] sensormon.cli: Mulai perintah 'report' dengan input 'data/edge_all_invalid.csv'
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Memuat 4 record dari data/edge_all_invalid.csv
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 2 dilewati: temperature 'ERR' bukan angka
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 3 dilewati: timestamp '18/11/2026 02:00' tidak sesuai format %Y-%m-%d %H:%M:%S
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 4 dilewati: kolom kosong/hilang: location
+2026-11-20 15:38:23 [WARNING] sensormon.processing: Baris 5 dilewati: temperature -60.0 di luar rentang sensor (-40.0 s.d. 80.0)
+2026-11-20 15:38:23 [INFO] sensormon.processing: Pipeline selesai: 0 bersih, 4 ditolak, 0 duplikat, 0 peringatan
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis 0 baris ke output/edge_all_invalid/clean_readings.csv
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis 0 baris ke output/edge_all_invalid/alerts.csv
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis 4 baris ke output/edge_all_invalid/rejected_rows.csv
+2026-11-20 15:38:23 [INFO] sensormon.io_handler: Menulis JSON ke output/edge_all_invalid/summary.json
+2026-11-20 15:38:23 [INFO] sensormon.cli: Perintah 'report' selesai

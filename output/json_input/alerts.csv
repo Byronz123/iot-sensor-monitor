@@ -1,0 +1,2 @@
+timestamp,sensor_id,location,temperature,humidity,status
+2026-11-19 12:00:00,S01,Ruang Server Utama,30.4,45.2,WASPADA

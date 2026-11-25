@@ -1,0 +1,56 @@
+$ python main.py report -i data/tidak_ada.csv -o output/errors
+[ERROR DATA] file tidak ditemukan: 'data/tidak_ada.csv'
+[exit code: 1]
+
+$ python main.py report -i data/edge_missing_column.csv -o output/errors
+[ERROR DATA] kolom wajib tidak ditemukan di 'data/edge_missing_column.csv': humidity
+[exit code: 1]
+
+$ python main.py report -i data/edge_broken.json -o output/errors
+[ERROR DATA] JSON tidak valid di 'data/edge_broken.json' baris 4 kolom 65: Expecting ',' delimiter
+[exit code: 1]
+
+$ python main.py report -i data/catatan.txt -o output/errors
+[ERROR DATA] ekstensi '.txt' tidak didukung; gunakan .csv, .json
+[exit code: 1]
+
+$ python main.py report --warning 35 --critical 30 -o output/errors
+[INPUT TIDAK VALID] ambang WASPADA (35.0) harus lebih kecil dari ambang KRITIS (30.0)
+[exit code: 2]
+
+$ python main.py report --warning abc -o output/errors
+usage: sensormon report [-h] [-i INPUT] [-o OUTPUT_DIR] [--warning WARNING]
+                        [--critical CRITICAL] [--log-file LOG_FILE] [-v]
+sensormon report: error: argument --warning: invalid float value: 'abc'
+[exit code: 2]
+
+$ python main.py search --status PANAS -o output/errors
+usage: sensormon search [-h] [-i INPUT] [-o OUTPUT_DIR] [--warning WARNING]
+                        [--critical CRITICAL] [--log-file LOG_FILE] [-v]
+                        [--sensor SENSOR] [--location LOCATION]
+                        [--status {NORMAL,WASPADA,KRITIS}] [--start START]
+                        [--end END] [--limit LIMIT] [--export EXPORT]
+sensormon search: error: argument --status: invalid choice: 'PANAS' (choose from 'NORMAL', 'WASPADA', 'KRITIS')
+[exit code: 2]
+
+$ python main.py search --start 2026-13-01 -o output/errors
+[INPUT TIDAK VALID] tanggal '2026-13-01' tidak valid; gunakan YYYY-MM-DD atau 'YYYY-MM-DD HH:MM:SS'
+[exit code: 2]
+
+$ python main.py search --start 2026-11-19 --end 2026-11-18 -o output/errors
+[INPUT TIDAK VALID] tanggal --start tidak boleh setelah --end
+[exit code: 2]
+
+$ python main.py search --limit 0 -o output/errors
+usage: sensormon search [-h] [-i INPUT] [-o OUTPUT_DIR] [--warning WARNING]
+                        [--critical CRITICAL] [--log-file LOG_FILE] [-v]
+                        [--sensor SENSOR] [--location LOCATION]
+                        [--status {NORMAL,WASPADA,KRITIS}] [--start START]
+                        [--end END] [--limit LIMIT] [--export EXPORT]
+sensormon search: error: argument --limit: nilai harus lebih besar dari 0
+[exit code: 2]
+
+$ python main.py search --export hasil.xlsx -o output/errors
+[INPUT TIDAK VALID] file --export harus berakhiran .csv atau .json
+[exit code: 2]
+

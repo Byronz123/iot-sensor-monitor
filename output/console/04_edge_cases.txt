@@ -1,0 +1,160 @@
+$ python main.py report -i data/edge_empty.csv -o output/edge_empty
+[!] PERINGATAN: tidak ada data bersih yang dapat dianalisis.
+================================================================
+LAPORAN MONITORING SUHU & KELEMBAPAN (SensorMon)
+================================================================
+Periode data      : - s.d. -
+Ambang batas      : WASPADA >= 27.0 °C, KRITIS >= 32.0 °C, RH aman 20-80 %
+
+[Kualitas Data]
+  Record dibaca     : 0
+  Ditolak (invalid) : 0
+  Duplikat dihapus  : 0
+  Record bersih     : 0
+
+[Ringkasan Keseluruhan]
+  Suhu       : belum ada data
+  Kelembapan : belum ada data
+  Status     : NORMAL=0, WASPADA=0, KRITIS=0
+
+[Rekap per Sensor]
+(tidak ada data yang cocok)
+
+[Kejadian KRITIS Pertama]
+  Tidak ada kejadian KRITIS.
+================================================================
+Tidak ada baris yang ditolak.
+
+File keluaran:
+  - output/edge_empty/clean_readings.csv
+  - output/edge_empty/alerts.csv
+  - output/edge_empty/rejected_rows.csv
+  - output/edge_empty/summary.json
+[exit code: 0]
+
+$ python main.py report -i data/edge_all_invalid.csv -o output/edge_all_invalid
+[!] PERINGATAN: tidak ada data bersih yang dapat dianalisis.
+================================================================
+LAPORAN MONITORING SUHU & KELEMBAPAN (SensorMon)
+================================================================
+Periode data      : - s.d. -
+Ambang batas      : WASPADA >= 27.0 °C, KRITIS >= 32.0 °C, RH aman 20-80 %
+
+[Kualitas Data]
+  Record dibaca     : 4
+  Ditolak (invalid) : 4
+  Duplikat dihapus  : 0
+  Record bersih     : 0
+
+[Ringkasan Keseluruhan]
+  Suhu       : belum ada data
+  Kelembapan : belum ada data
+  Status     : NORMAL=0, WASPADA=0, KRITIS=0
+
+[Rekap per Sensor]
+(tidak ada data yang cocok)
+
+[Kejadian KRITIS Pertama]
+  Tidak ada kejadian KRITIS.
+================================================================
+Baris yang ditolak:
+  - baris 2: temperature 'ERR' bukan angka
+  - baris 3: timestamp '18/11/2026 02:00' tidak sesuai format %Y-%m-%d %H:%M:%S
+  - baris 4: kolom kosong/hilang: location
+  - baris 5: temperature -60.0 di luar rentang sensor (-40.0 s.d. 80.0)
+
+File keluaran:
+  - output/edge_all_invalid/clean_readings.csv
+  - output/edge_all_invalid/alerts.csv
+  - output/edge_all_invalid/rejected_rows.csv
+  - output/edge_all_invalid/summary.json
+[exit code: 0]
+
+$ python main.py report -i data/edge_boundary.csv -o output/edge_boundary
+================================================================
+LAPORAN MONITORING SUHU & KELEMBAPAN (SensorMon)
+================================================================
+Periode data      : 2026-11-18 00:00:00 s.d. 2026-11-18 07:00:00
+Ambang batas      : WASPADA >= 27.0 °C, KRITIS >= 32.0 °C, RH aman 20-80 %
+
+[Kualitas Data]
+  Record dibaca     : 8
+  Ditolak (invalid) : 0
+  Duplikat dihapus  : 0
+  Record bersih     : 8
+
+[Ringkasan Keseluruhan]
+  Suhu       : min 25.0°C | maks 32.0°C | rata-rata 27.23°C
+  Kelembapan : min 19.9% | maks 80.1% | rata-rata 50.00%
+  Status     : NORMAL=3, WASPADA=4, KRITIS=1
+
+[Rekap per Sensor]
+No | Sensor | Lokasi    | Data | Rata2 Suhu | Maks Suhu | Rata2 RH | Peringatan
+---+--------+-----------+------+------------+-----------+----------+-----------
+1  | S09    | Ruang Uji | 8    | 27.23      | 32.0      | 50.00    | 5
+
+[Kejadian KRITIS Pertama]
+  2026-11-18 03:00:00 - S09 (Ruang Uji) suhu 32.0 °C
+================================================================
+Tidak ada baris yang ditolak.
+
+File keluaran:
+  - output/edge_boundary/clean_readings.csv
+  - output/edge_boundary/alerts.csv
+  - output/edge_boundary/rejected_rows.csv
+  - output/edge_boundary/summary.json
+[exit code: 0]
+
+$ python main.py search -i data/edge_boundary.csv -o output/edge_boundary
+Kriteria : semua data
+Ditemukan: 8 data
+No | Waktu               | Sensor | Lokasi    | Suhu(°C) | RH(%) | Status
+---+---------------------+--------+-----------+----------+-------+--------
+1  | 2026-11-18 00:00:00 | S09    | Ruang Uji | 26.9     | 50.0  | NORMAL
+2  | 2026-11-18 01:00:00 | S09    | Ruang Uji | 27.0     | 50.0  | WASPADA
+3  | 2026-11-18 02:00:00 | S09    | Ruang Uji | 31.9     | 50.0  | WASPADA
+4  | 2026-11-18 03:00:00 | S09    | Ruang Uji | 32.0     | 50.0  | KRITIS
+5  | 2026-11-18 04:00:00 | S09    | Ruang Uji | 25.0     | 20.0  | NORMAL
+6  | 2026-11-18 05:00:00 | S09    | Ruang Uji | 25.0     | 80.0  | NORMAL
+7  | 2026-11-18 06:00:00 | S09    | Ruang Uji | 25.0     | 19.9  | WASPADA
+8  | 2026-11-18 07:00:00 | S09    | Ruang Uji | 25.0     | 80.1  | WASPADA
+[exit code: 0]
+
+$ python main.py report -i data/edge_bom_excel.csv -o output/edge_bom_excel
+================================================================
+LAPORAN MONITORING SUHU & KELEMBAPAN (SensorMon)
+================================================================
+Periode data      : 2026-11-18 00:00:00 s.d. 2026-11-18 01:00:00
+Ambang batas      : WASPADA >= 27.0 °C, KRITIS >= 32.0 °C, RH aman 20-80 %
+
+[Kualitas Data]
+  Record dibaca     : 8
+  Ditolak (invalid) : 0
+  Duplikat dihapus  : 0
+  Record bersih     : 8
+
+[Ringkasan Keseluruhan]
+  Suhu       : min 22.1°C | maks 24.4°C | rata-rata 23.36°C
+  Kelembapan : min 41.5% | maks 69.1% | rata-rata 54.29%
+  Status     : NORMAL=8, WASPADA=0, KRITIS=0
+
+[Rekap per Sensor]
+No | Sensor | Lokasi                | Data | Rata2 Suhu | Maks Suhu | Rata2 RH | Peringatan
+---+--------+-----------------------+------+------------+-----------+----------+-----------
+1  | S01    | Ruang Server Utama    | 2    | 22.45      | 22.8      | 49.20    | 0
+2  | S02    | Lab Jaringan Komputer | 2    | 23.60      | 23.8      | 57.30    | 0
+3  | S03    | Lab Embedded System   | 2    | 24.35      | 24.4      | 67.75    | 0
+4  | S04    | Ruang UPS dan Panel   | 2    | 23.05      | 23.2      | 42.90    | 0
+
+[Kejadian KRITIS Pertama]
+  Tidak ada kejadian KRITIS.
+================================================================
+Tidak ada baris yang ditolak.
+
+File keluaran:
+  - output/edge_bom_excel/clean_readings.csv
+  - output/edge_bom_excel/alerts.csv
+  - output/edge_bom_excel/rejected_rows.csv
+  - output/edge_bom_excel/summary.json
+[exit code: 0]
+

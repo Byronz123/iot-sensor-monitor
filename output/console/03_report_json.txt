@@ -1,0 +1,39 @@
+$ python main.py report -i data/sensor_readings.json -o output/json_input
+================================================================
+LAPORAN MONITORING SUHU & KELEMBAPAN (SensorMon)
+================================================================
+Periode data      : 2026-11-19 00:00:00 s.d. 2026-11-19 21:00:00
+Ambang batas      : WASPADA >= 27.0 °C, KRITIS >= 32.0 °C, RH aman 20-80 %
+
+[Kualitas Data]
+  Record dibaca     : 27
+  Ditolak (invalid) : 2
+  Duplikat dihapus  : 1
+  Record bersih     : 24
+
+[Ringkasan Keseluruhan]
+  Suhu       : min 23.0°C | maks 30.4°C | rata-rata 25.21°C
+  Kelembapan : min 42.1% | maks 70.7% | rata-rata 55.94%
+  Status     : NORMAL=23, WASPADA=1, KRITIS=0
+
+[Rekap per Sensor]
+No | Sensor | Lokasi                | Data | Rata2 Suhu | Maks Suhu | Rata2 RH | Peringatan
+---+--------+-----------------------+------+------------+-----------+----------+-----------
+1  | S01    | Ruang Server Utama    | 8    | 24.71      | 30.4      | 43.99    | 1
+2  | S02    | Lab Jaringan Komputer | 8    | 25.06      | 25.7      | 55.54    | 0
+3  | S03    | Lab Embedded System   | 8    | 25.85      | 26.4      | 68.29    | 0
+
+[Kejadian KRITIS Pertama]
+  Tidak ada kejadian KRITIS.
+================================================================
+Baris yang ditolak:
+  - baris 10: record bukan objek key-value
+  - baris 15: kolom kosong/hilang: temperature
+
+File keluaran:
+  - output/json_input/clean_readings.csv
+  - output/json_input/alerts.csv
+  - output/json_input/rejected_rows.csv
+  - output/json_input/summary.json
+[exit code: 0]
+

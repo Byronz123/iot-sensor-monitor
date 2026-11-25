@@ -1,0 +1,267 @@
+{
+    "generated_at": "2026-11-20 15:38:23",
+    "thresholds": {
+        "warning_temp": 27.0,
+        "critical_temp": 32.0,
+        "safe_humidity": [
+            20.0,
+            80.0
+        ]
+    },
+    "data_quality": {
+        "raw_records": 8,
+        "valid_records": 8,
+        "rejected_records": 0,
+        "duplicates_removed": 0,
+        "clean_records": 8
+    },
+    "period": {
+        "start": "2026-11-18 00:00:00",
+        "end": "2026-11-18 01:00:00"
+    },
+    "overall": {
+        "readings": 8,
+        "temperature": {
+            "count": 8,
+            "min": 22.1,
+            "max": 24.4,
+            "avg": 23.36
+        },
+        "humidity": {
+            "count": 8,
+            "min": 41.5,
+            "max": 69.1,
+            "avg": 54.29
+        },
+        "status_count": {
+            "NORMAL": 8,
+            "WASPADA": 0,
+            "KRITIS": 0
+        },
+        "locations": [
+            "Lab Embedded System",
+            "Lab Jaringan Komputer",
+            "Ruang Server Utama",
+            "Ruang UPS dan Panel"
+        ],
+        "sensors": [
+            "S01",
+            "S02",
+            "S03",
+            "S04"
+        ]
+    },
+    "by_sensor": {
+        "S01": {
+            "readings": 2,
+            "temperature": {
+                "count": 2,
+                "min": 22.1,
+                "max": 22.8,
+                "avg": 22.45
+            },
+            "humidity": {
+                "count": 2,
+                "min": 48.7,
+                "max": 49.7,
+                "avg": 49.2
+            },
+            "status_count": {
+                "NORMAL": 2,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Ruang Server Utama"
+            ],
+            "sensors": [
+                "S01"
+            ]
+        },
+        "S02": {
+            "readings": 2,
+            "temperature": {
+                "count": 2,
+                "min": 23.4,
+                "max": 23.8,
+                "avg": 23.6
+            },
+            "humidity": {
+                "count": 2,
+                "min": 53.4,
+                "max": 61.2,
+                "avg": 57.3
+            },
+            "status_count": {
+                "NORMAL": 2,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Lab Jaringan Komputer"
+            ],
+            "sensors": [
+                "S02"
+            ]
+        },
+        "S03": {
+            "readings": 2,
+            "temperature": {
+                "count": 2,
+                "min": 24.3,
+                "max": 24.4,
+                "avg": 24.35
+            },
+            "humidity": {
+                "count": 2,
+                "min": 66.4,
+                "max": 69.1,
+                "avg": 67.75
+            },
+            "status_count": {
+                "NORMAL": 2,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Lab Embedded System"
+            ],
+            "sensors": [
+                "S03"
+            ]
+        },
+        "S04": {
+            "readings": 2,
+            "temperature": {
+                "count": 2,
+                "min": 22.9,
+                "max": 23.2,
+                "avg": 23.05
+            },
+            "humidity": {
+                "count": 2,
+                "min": 41.5,
+                "max": 44.3,
+                "avg": 42.9
+            },
+            "status_count": {
+                "NORMAL": 2,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Ruang UPS dan Panel"
+            ],
+            "sensors": [
+                "S04"
+            ]
+        }
+    },
+    "by_location": {
+        "Lab Embedded System": {
+            "readings": 2,
+            "temperature": {
+                "count": 2,
+                "min": 24.3,
+                "max": 24.4,
+                "avg": 24.35
+            },
+            "humidity": {
+                "count": 2,
+                "min": 66.4,
+                "max": 69.1,
+                "avg": 67.75
+            },
+            "status_count": {
+                "NORMAL": 2,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Lab Embedded System"
+            ],
+            "sensors": [
+                "S03"
+            ]
+        },
+        "Lab Jaringan Komputer": {
+            "readings": 2,
+            "temperature": {
+                "count": 2,
+                "min": 23.4,
+                "max": 23.8,
+                "avg": 23.6
+            },
+            "humidity": {
+                "count": 2,
+                "min": 53.4,
+                "max": 61.2,
+                "avg": 57.3
+            },
+            "status_count": {
+                "NORMAL": 2,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Lab Jaringan Komputer"
+            ],
+            "sensors": [
+                "S02"
+            ]
+        },
+        "Ruang Server Utama": {
+            "readings": 2,
+            "temperature": {
+                "count": 2,
+                "min": 22.1,
+                "max": 22.8,
+                "avg": 22.45
+            },
+            "humidity": {
+                "count": 2,
+                "min": 48.7,
+                "max": 49.7,
+                "avg": 49.2
+            },
+            "status_count": {
+                "NORMAL": 2,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Ruang Server Utama"
+            ],
+            "sensors": [
+                "S01"
+            ]
+        },
+        "Ruang UPS dan Panel": {
+            "readings": 2,
+            "temperature": {
+                "count": 2,
+                "min": 22.9,
+                "max": 23.2,
+                "avg": 23.05
+            },
+            "humidity": {
+                "count": 2,
+                "min": 41.5,
+                "max": 44.3,
+                "avg": 42.9
+            },
+            "status_count": {
+                "NORMAL": 2,
+                "WASPADA": 0,
+                "KRITIS": 0
+            },
+            "locations": [
+                "Ruang UPS dan Panel"
+            ],
+            "sensors": [
+                "S04"
+            ]
+        }
+    },
+    "first_critical_event": null
+}
