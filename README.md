@@ -5,7 +5,7 @@ membersihkan, menganalisis, dan merekap data sensor IoT suhu & kelembapan
 (DHT22 + ESP32) di ruang server dan laboratorium.
 
 > UTS Pemrograman Dasar (TK091) — S1 Teknik Komputer, Universitas Amikom Yogyakarta
-> Nama: Muhammad Adiyaat Alfathi · NIM: 25.83.1198 · Repository: 
+> Nama: Muhammad Adiyaat Alfathi · NIM: 25.83.1198 · Repository: https://github.com/Byronz123/iot-sensor-monitor
 
 ---
 
