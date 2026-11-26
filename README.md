@@ -59,8 +59,8 @@ iot-sensor-monitor/
 │   └── cli.py               # user interface: argparse + menu interaktif
 ├── data/                    # contoh file input (normal + edge case)
 ├── output/                  # contoh hasil keluaran + transkrip konsol
-├── tests/test_sensormon.py  # 20 unit test (unittest)
-├── docs/debugging.md        # laporan 2 skenario debugging
+├── tests/test_sensormon.py  # 21 unit test (unittest)
+├── docs/debugging.md        # laporan 3 skenario debugging
 ├── requirements.txt         # daftar dependency (kosong: hanya standard library)
 └── README.md
 ```
@@ -111,7 +111,7 @@ cli.main()
 ## 6. Instalasi
 
 ```bash
-git clone <URL repository> iot-sensor-monitor
+git clone https://github.com/Byronz123/iot-sensor-monitor.git
 cd iot-sensor-monitor
 
 # (disarankan) buat virtual environment
@@ -237,11 +237,12 @@ Transkrip seluruh skenario ada di `output/console/`.
 python -m unittest discover -s tests -v
 ```
 
-Hasil: 20 test, semua `OK` (lihat `output/console/07_unit_test.txt`).
+Hasil: 21 test, semua `OK` (lihat `output/console/07_unit_test.txt`).
 
 ## 12. Debugging
 
-Dua skenario error nyata (CSV ber-BOM dari Excel dan `BrokenPipeError`)
+Tiga skenario error nyata (CSV ber-BOM dari Excel, `BrokenPipeError`, dan
+`PermissionError` WinError 32 karena file log belum ditutup di Windows)
 didokumentasikan langkah demi langkah di [`docs/debugging.md`](docs/debugging.md),
 termasuk sesi `pdb` dengan breakpoint.
 

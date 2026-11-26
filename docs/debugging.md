@@ -1,6 +1,6 @@
 # Laporan Debugging SensorMon
 
-Dokumen ini mencatat dua skenario error nyata yang ditemukan saat pengujian,
+Dokumen ini mencatat tiga skenario error nyata yang ditemukan saat pengujian,
 lengkap dengan langkah debugging, akar masalah, perbaikan, dan verifikasi.
 Strategi yang dipakai mengikuti materi Pertemuan 9: baca pesan error dan
 traceback, periksa log, pasang *breakpoint* untuk inspeksi variabel, lalu uji
@@ -193,6 +193,79 @@ LAPORAN MONITORING SUHU & KELEMBAPAN (SensorMon)
 
 ---
 
+## Skenario 3 — Unit test gagal di Windows: `PermissionError` WinError 32
+
+### 1. Gejala
+
+Di Linux seluruh test lulus, tetapi di laptop Windows (Anaconda Python):
+
+```text
+PS> python -m unittest discover -s tests -v
+test_error_exit_codes (test_sensormon.TestCommandLine.test_error_exit_codes) ... ERROR
+test_report_writes_all_outputs (test_sensormon.TestCommandLine.test_report_writes_all_outputs) ... ERROR
+...
+Ran 20 tests in 0.394s
+FAILED (errors=2)
+```
+
+### 2. Membaca traceback
+
+```text
+Traceback (most recent call last):
+  File "E:\Anaconda\Lib\shutil.py", line 633, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] The process cannot access the file because it is
+being used by another process: 'D:\\Temp\\tmpt2rqekdu\\sensormon.log'
+
+During handling of the above exception, another exception occurred:
+  File "tests\test_sensormon.py", line 210, in test_error_exit_codes
+    with tempfile.TemporaryDirectory() as folder:
+  ...
+PermissionError: [WinError 32] ... 'D:\\Temp\\tmpt2rqekdu\\sensormon.log'
+```
+
+Error tidak terjadi di logika aplikasi, melainkan saat `TemporaryDirectory`
+menghapus folder sementara: file `sensormon.log` masih dipegang proses lain.
+
+### 3. Akar masalah
+
+`setup_logging` membuka `sensormon.log` lewat `logging.FileHandler`, tetapi
+handler tidak pernah ditutup setelah `main()` selesai. Linux mengizinkan file
+yang masih terbuka dihapus, sedangkan Windows menolaknya (WinError 32).
+
+### 4. Perbaikan
+
+* `sensormon/logger.py`: fungsi baru `close_logging()` yang melepas dan
+  menutup semua handler root logger.
+* `sensormon/cli.py`: `close_logging()` dipanggil di blok `finally` pada
+  `main()`, sehingga file log selalu dilepas, baik program sukses maupun error.
+* `sensormon/__init__.py`: menambahkan `logging.NullHandler()` pada logger
+  package agar pesan WARNING tidak tercetak ke layar ketika fungsi dipanggil
+  langsung (mis. dari unit test) sebelum logging diatur.
+
+```python
+def close_logging() -> None:
+    root = logging.getLogger()
+    for handler in root.handlers[:]:
+        root.removeHandler(handler)
+        handler.close()
+```
+
+### 5. Verifikasi
+
+Regression test `test_log_file_is_released` ditambahkan: setelah `main()`
+selesai, root logger tidak lagi memiliki handler dan file log dapat dihapus.
+
+```text
+PS> python -m unittest discover -s tests -v
+...
+Ran 21 tests in 0.205s
+
+OK
+```
+
+---
+
 ## Pelajaran
 
 1. Baca traceback dari bawah (jenis exception) lalu ke atas (lokasi).
@@ -202,3 +275,5 @@ LAPORAN MONITORING SUHU & KELEMBAPAN (SensorMon)
 4. Setiap bug yang diperbaiki diberi regression test.
 5. Tangkap exception yang **spesifik** dulu; `except Exception` hanya di batas
    terluar aplikasi dan wajib mencatat detail ke log.
+6. Uji program di sistem operasi yang dipakai pengguna (Windows), bukan hanya di
+   lingkungan pengembang; perilaku file berbeda antar-OS.
